@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaJam Coffee House Website</title>
+        <link href="javajam.css" rel="stylesheet"/>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JavaJam Coffee House</h1>
+            </header>
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a>
+                        <ul>
+                            <li><a href="hotbrews.html">Hot Brews</a></li>
+                            <li><a href="coldbrews.html">Cold Brews</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="menu.html">Menu</a>
+                        <ul>
+                            <li><a href="breakfast.html">Breakfast</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+            <main class="jobs"> 
+                <h2>Job Application Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                            <label>First Name:*<input type="text" name="fname" required></label>
+                            <label>Last Name:*&nbsp;<input type="text" name="lname" required></label><br><br>
+                            <label>E-mail: * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required></label>
+                            <label>Tel:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="tel" name="tel" required></label><br><br>
+                            <label>Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="female">Female</label>&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="gender" value="male">Male<br><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Education Background</legend>
+                        <label>Highest Degree: <input type="text" name="degree" id="degree" list="degrees">
+                            <datalist id="degrees">
+                            <option value="High School">
+                            <option value="Bachelor">
+                            <option value="Master">
+                            <option value="PHD">
+                        </label><br><br>
+                        <label>School Name: &nbsp;&nbsp; <input type="text" name="school" id="school"></label><br><br>
+                        <label>Graduate Date: &nbsp;<input type="date" name="graduatedate"></label>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Work Information</legend>
+                        <label>What position are you applying for? * <input type="text" name="position" id="position" list="positions">
+                            <datalist id="positions">
+                                <option value="Waiter/Waitress">
+                                <option value="Greeter/Host">
+                                <option value="Counter Associate">
+                                <option value="Barista">
+                            </datalist>
+                        </label><br><br>
+                        <label>Available start date: <input type="date" name="startdate"></label><br><br>
+                        <label>Relative work experience:&nbsp;&nbsp;<input type="number" name="workexperience" id="workexperience" min="0" max="60">&nbsp;years</label><br><br>
+                        <label>What is your corrent employeement status? <br><br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="status" value="employed">Employed&nbsp;&nbsp;
+                            <input type="radio" name="status" value="unemployed">Unemployed&nbsp;&nbsp;
+                            <input type="radio" name="status" value="student">Student&nbsp;&nbsp;
+                        </label><br><br>
+                    </fieldset><br>
+                
+                    <fieldset>
+                        <legend>Local Address</legend>
+                        <label>Street: <input type="text" name="street" id="street" size="56"></label><br><br>
+                        <label>City:&nbsp;&nbsp;&nbsp; <input type="text" name="city" id="city" ></label>
+                        <label>State:&nbsp;&nbsp;<input type="text" name="state" id="state" maxlength="2" size="5"></label>
+                        <label>Zip:&nbsp;&nbsp;<input type="text" name="zip" id="zip" maxlength="5" size="5"></label>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>About Yourself</legend>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea name="about" id="about" rows="7" cols="70"></textarea>
+                    </fieldset>
+                    <br>   
+                    <input type="reset" id="reset" value="Reset" >&nbsp;&nbsp;&nbsp;<input type="submit" id="submit" value="Submit">
+                    
+                </form>
+            </main>
+            <footer>
+                Copyright &copy; 2016 JavaJam Coffee House<br>
+                <a href="mailto:yuanyuan@zhou.com">yuanyuan@zhou.com</a>
+            </footer>
+        </div>
+    </body>
+</html>
+
